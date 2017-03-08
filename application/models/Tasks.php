@@ -37,6 +37,7 @@ class Tasks extends MY_Model {
             ['field' => 'priority', 'label' => 'Priority', 'rules' => 'integer|less_than[4]'],
             ['field' => 'size', 'label' => 'Task size', 'rules' => 'integer|less_than[4]'],
             ['field' => 'group', 'label' => 'Task group', 'rules' => 'integer|less_than[5]'],
+            ['field' => 'status', 'label' => 'Task status', 'rules' => 'in_list[, 1, 2]'],
         );
         return $config;
     }
